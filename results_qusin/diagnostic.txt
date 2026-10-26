@@ -1,0 +1,4 @@
+n_haps=2: users limited by backhaul = 6%
+n_haps=3: users limited by backhaul = 3%
+n_haps=4: users limited by backhaul = 2%
+n_haps=6: users limited by backhaul = 3%

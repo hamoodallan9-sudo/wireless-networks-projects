@@ -1,0 +1,6 @@
+method                sum-rate   p5 rate   outage%    Jain  Tx power W  active HAPS
+Q-Learning                2.05     0.055      14.0    0.94        18.6         1.50
+Random                    0.94     0.021      97.7    0.95        11.9         4.00
+MaxPower+Greedy           1.85     0.035      51.0    0.69        51.0         4.00
+BestUniform+Greedy        1.83     0.035      51.7    0.70        51.0         4.00
+SingleHAPS                2.04     0.068      10.0    1.00        21.0         1.00

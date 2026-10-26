@@ -1,0 +1,60 @@
+=== 30 users, 30 topologies ===
+method               sum Mbps  p5 Mbps  outage%   Jain   Tx W  HAPS on  blocked%
+Q-Learning              121.8     2.36      2.4   0.88   28.7     4.00       0.2
+Random                   54.9     1.47      0.0   0.98   11.7     4.00       0.5
+MaxPower+Greedy          81.3     1.15      4.9   0.70   48.7     3.87       4.6
+BestUniform+Greedy       81.4     1.15      5.1   0.69   48.7     3.87       4.6
+GreedyLB                 83.5     1.71      0.4   0.71   49.7     3.97       0.0
+GreedyLB+LEO            121.1     2.29      0.2   0.71   59.7     3.97       0.0
+GreedyLB+LEO(minP)       66.5     1.27      2.1   0.71    7.3     3.97       0.0
+SingleHAPS               22.3     0.00     60.0   0.40   20.0     1.00      60.0
+
+Paired difference Q-Learning minus baseline: mean [95% bootstrap CI]
+(negative outage / power / blocked = Q-Learning better; positive rate = Q-Learning better)
+  vs GreedyLB+LEO(minP)   outage        0.33  [  -3.33,    3.22]
+  vs GreedyLB+LEO(minP)   p5_rate       1.09  [   0.73,    1.45]
+  vs GreedyLB+LEO(minP)   power_w      21.39  [  13.81,   27.61]
+  vs GreedyLB+LEO(minP)   sum_rate     55.32  [  47.43,   62.41]
+  vs GreedyLB+LEO         outage        2.22  [   0.22,    4.56]
+  vs GreedyLB+LEO         p5_rate       0.07  [  -0.28,    0.43]
+  vs GreedyLB+LEO         power_w     -30.97  [ -34.13,  -27.90]
+  vs GreedyLB+LEO         sum_rate      0.67  [  -3.47,    4.60]
+  vs GreedyLB             outage        2.00  [   0.22,    4.22]
+  vs GreedyLB             p5_rate       0.64  [   0.30,    0.99]
+  vs GreedyLB             power_w     -20.97  [ -24.17,  -17.95]
+  vs GreedyLB             sum_rate     38.27  [  35.09,   41.28]
+  vs BestUniform+Greedy   outage       -2.67  [  -5.56,    0.44]
+  vs BestUniform+Greedy   p5_rate       1.21  [   0.77,    1.65]
+  vs BestUniform+Greedy   power_w     -19.97  [ -23.25,  -16.66]
+  vs BestUniform+Greedy   sum_rate     40.38  [  36.97,   43.75]
+
+=== 45 users, 30 topologies ===
+method               sum Mbps  p5 Mbps  outage%   Jain   Tx W  HAPS on  blocked%
+Q-Learning              113.6     0.96     10.7   0.86   30.0     4.00       1.9
+Random                   53.3     0.96     14.5   0.98   11.8     4.00       7.5
+MaxPower+Greedy          85.1     0.11     17.1   0.65   50.0     3.97      16.7
+BestUniform+Greedy       85.1     0.11     17.0   0.65   50.0     3.97      16.7
+GreedyLB                 83.9     1.48      0.4   0.98   50.3     4.00       0.0
+GreedyLB+LEO            113.8     1.73      4.6   0.96   60.3     4.00       0.0
+GreedyLB+LEO(minP)       79.5     1.33      4.8   0.97   15.1     4.00       0.0
+SingleHAPS               22.7     0.00     73.3   0.27   20.3     1.00      73.3
+
+Paired difference Q-Learning minus baseline: mean [95% bootstrap CI]
+(negative outage / power / blocked = Q-Learning better; positive rate = Q-Learning better)
+  vs GreedyLB+LEO(minP)   outage        5.85  [  -3.04,   12.59]
+  vs GreedyLB+LEO(minP)   p5_rate      -0.37  [  -0.66,   -0.08]
+  vs GreedyLB+LEO(minP)   power_w      14.93  [   4.94,   23.80]
+  vs GreedyLB+LEO(minP)   sum_rate     34.15  [  24.12,   43.43]
+  vs GreedyLB+LEO         outage        6.07  [  -2.74,   12.67]
+  vs GreedyLB+LEO         p5_rate      -0.77  [  -1.06,   -0.45]
+  vs GreedyLB+LEO         power_w     -30.29  [ -33.77,  -26.67]
+  vs GreedyLB+LEO         sum_rate     -0.24  [  -7.68,    8.17]
+  vs GreedyLB             outage       10.30  [   7.11,   13.78]
+  vs GreedyLB             p5_rate      -0.52  [  -0.78,   -0.25]
+  vs GreedyLB             power_w     -20.29  [ -23.99,  -16.61]
+  vs GreedyLB             sum_rate     29.74  [  23.84,   34.78]
+  vs BestUniform+Greedy   outage       -6.37  [ -10.52,   -2.22]
+  vs BestUniform+Greedy   p5_rate       0.85  [   0.62,    1.09]
+  vs BestUniform+Greedy   power_w     -19.96  [ -23.56,  -16.04]
+  vs BestUniform+Greedy   sum_rate     28.54  [  22.54,   33.59]
+

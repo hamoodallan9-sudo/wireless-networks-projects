@@ -1,0 +1,21 @@
+MAIN: 3 LEO / 4 HAPS / 30 users, kmax=12, sub-bands=2, beam=35.0 dBi, 20000 episodes, 10 topologies
+method               sum Mbps  p5 Mbps  outage%   Jain   Tx W  HAPS on  blocked%
+Q-Learning              115.5     2.24      2.0   0.87   29.5     4.00       0.7
+Random                   57.1     1.54      0.0   0.98   11.9     4.00       0.5
+MaxPower+Greedy          87.0     1.52      3.3   0.69   51.0     4.00       3.3
+BestUniform+Greedy       87.3     1.53      3.3   0.69   51.0     4.00       3.3
+GreedyLB                 86.7     1.72      0.0   0.74   51.0     4.00       0.0
+GreedyLB+LEO            124.5     2.30      0.0   0.73   60.0     4.00       0.0
+GreedyLB+LEO(minP)       70.2     1.33      0.0   0.73    7.3     4.00       0.0
+SingleHAPS               22.2     0.00     60.0   0.40   21.0     1.00      60.0
+  n_users=15: Q-Learning: outage=0.0%  GreedyLB+LEO: outage=0.0%  GreedyLB+LEO(minP): outage=3.3%
+  n_users=30: Q-Learning: outage=3.7%  GreedyLB+LEO: outage=0.0%  GreedyLB+LEO(minP): outage=6.7%
+  n_users=45: Q-Learning: outage=4.7%  GreedyLB+LEO: outage=0.2%  GreedyLB+LEO(minP): outage=0.7%
+  n_users=60: Q-Learning: outage=32.0%  GreedyLB+LEO: outage=20.2%  GreedyLB+LEO(minP): outage=20.3%
+  n_sub=1: Q-Learning: outage=8.3%  GreedyLB+LEO: outage=0.0%  GreedyLB+LEO(minP): outage=4.0%
+  n_sub=2: Q-Learning: outage=3.7%  GreedyLB+LEO: outage=0.0%  GreedyLB+LEO(minP): outage=6.7%
+  n_sub=4: Q-Learning: outage=0.0%  GreedyLB+LEO: outage=0.0%  GreedyLB+LEO(minP): outage=3.3%
+  beam_gain_dbi=20: Q-Learning: outage=19.7%  GreedyLB+LEO: outage=28.3%  GreedyLB+LEO(minP): outage=25.7%
+  beam_gain_dbi=27: Q-Learning: outage=9.3%  GreedyLB+LEO: outage=1.7%  GreedyLB+LEO(minP): outage=5.3%
+  beam_gain_dbi=35: Q-Learning: outage=3.7%  GreedyLB+LEO: outage=0.0%  GreedyLB+LEO(minP): outage=6.7%
+saved /home/claude/sagin/results_qusin_v2
