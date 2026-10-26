@@ -10,7 +10,7 @@ The toolkit's own files are **not** included here and are **not modified**.
 ## Setup (Windows cmd; use `python3` on Linux/macOS)
 ```
 git clone https://github.com/Lewis-panda/Optimizing-SAGIN-Association-Link-Power-Using-Reinforcement-Learning.git sagin
-git clone <URL of this repository> mycode
+git clone https://github.com/hamoodallan9-sudo/wireless-networks-projects  mycode
 copy mycode\*.py sagin\
 xcopy mycode\results_qusin sagin\results_qusin\ /E /I
 xcopy mycode\results_qusin_v2 sagin\results_qusin_v2\ /E /I
